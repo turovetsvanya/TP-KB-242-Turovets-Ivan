@@ -1,7 +1,7 @@
-text = "Test"
+text = "  Text  "
 print ("Original:", repr(text))
-print ("strip()", repr(text.strip()))
-print ("capitalize()", text.capitalize())
-print ("title()", text.title())
-print ("upper()", text.upper())
-print ("lower()", text.lower())
+print ("strip():", repr(text.strip()))
+print ("capitalize():", text.capitalize())
+print ("title():", text.title())
+print ("upper():", text.upper())
+print ("lower():", text.lower())
