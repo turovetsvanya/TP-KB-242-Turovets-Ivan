@@ -21,7 +21,7 @@ def printAllList():
     return
 
 def addNewElement():
-    name = input("PeІase enter student name: ")
+    name = input("Please enter student name: ")
     phone = input("Please enter student phone: ")
     email = input("Please enter student email (or leave empty): ")
     group = input("Please enter student group (or leave empty): ")
@@ -55,35 +55,31 @@ def deleteElement():
 
 def updateElement():
     name = input("Please enter name to be updated: ")
-    found = False
-
+    deletePosition = -1
     for item in list:
-            print(f"Current data: {item}")
-            new_name = input("Enter new name (leave empty to keep current): ")
-            new_phone = input("Enter new phone (leave empty to keep current): ")
-            new_email = input("Enter new email (leave empty to keep current): ")
-            new_group = input("Enter new group (leave empty to keep current): ")
-
-            # Update only provided fields
-            if new_name != "":
-                item["name"] = new_name
-            if new_phone != "":
-                item["phone"] = new_phone
-            if new_email != "":
-                item["email"] = new_email
-            if new_group != "":
-                item["group"] = new_group
-
-            # Re-sort list after updating name
-            list.sort(key=lambda x: x["name"])
-            found = True
-            print("Student information updated successfully.")
+        if name == item["name"]:
+            deletePosition = list.index(item)
             break
+    if deletePosition == -1:
+        print("Element was not found")
+        return
 
-    if not found:
-        print("Student not found.")
+    del list[deletePosition]
+    new_name = input("Enter new name (leave empty to keep current):")
+    new_phone = input("Enter new phone (leave empty to keep current):")
+    new_email = input("Enter new email (leave empty to keep current):")
+    new_group = input("Enter new group (leave empty to keep current)")
+    newItem = {"name": new_name, "phone": new_phone, "email": new_email, "group": new_group}
+
+    insertPosition = 0
+    for item in list:
+        if new_name > item["name"]:
+            insertPosition += 1
+        else:
+            break
+    list.insert(insertPosition, newItem)
+    print("Element has been updated")
     return
-    # implementation required
 
 def main():
     while True:
