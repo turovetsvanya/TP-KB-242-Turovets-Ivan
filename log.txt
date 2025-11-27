@@ -1,0 +1,17 @@
+2025-11-28 00:40:55,522 - User selected operation: 1
+2025-11-28 00:41:00,447 - User entered numbers: a=12.0, b=1.0
+2025-11-28 00:41:00,448 - Addition performed on 12.0 and 1.0, result = 13.0
+2025-11-28 00:41:05,029 - User chose to continue: yes
+2025-11-28 00:41:06,678 - User selected operation: 2
+2025-11-28 00:41:08,953 - User entered numbers: a=55.0, b=1.0
+2025-11-28 00:41:08,953 - Subtraction performed on 55.0 and 1.0, result = 54.0
+2025-11-28 00:41:12,730 - User chose to continue: yes
+2025-11-28 00:41:16,009 - User selected operation: 3
+2025-11-28 00:41:22,670 - User entered numbers: a=44.0, b=11.0
+2025-11-28 00:41:22,670 - Multiplication performed on 44.0 and 11.0, result = 484.0
+2025-11-28 00:41:25,882 - User chose to continue: yes
+2025-11-28 00:41:27,576 - User selected operation: 4
+2025-11-28 00:41:33,660 - User entered numbers: a=144.0, b=12.0
+2025-11-28 00:41:33,660 - Division performed on 144.0 and 12.0, result = 12.0
+2025-11-28 00:41:36,632 - User chose to continue: no
+2025-11-28 00:41:36,632 - Program exited by user.
