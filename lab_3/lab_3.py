@@ -1,12 +1,10 @@
 import csv
 import sys
 
-
 class Student:
     def __init__(self, name, phone):
         self.name = name
         self.phone = phone
-
 
 class StudentList:
     def __init__(self):
@@ -78,7 +76,6 @@ class StudentList:
         self.list_students.insert(insert_position, new_student)
         print("Element has been updated")
 
-
 class Utils:
     @staticmethod
     def load_csv(file_name):
@@ -108,7 +105,6 @@ class Utils:
                     "Phone": student.phone
                 })
         return group_list
-
 
 def main():
     if len(sys.argv) < 2:

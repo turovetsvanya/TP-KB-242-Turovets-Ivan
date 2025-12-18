@@ -3,7 +3,6 @@ import os
 from unittest.mock import patch
 from lab_3 import StudentList, Utils
 
-
 class TestLab3(unittest.TestCase):
 
     def setUp(self):
@@ -52,7 +51,6 @@ class TestLab3(unittest.TestCase):
         Utils.save_csv(self.group_list, "lab3test.csv")
         self.assertTrue(os.path.isfile("lab3test.csv"))
         os.remove("lab3test.csv")
-
 
 if __name__ == "__main__":
     unittest.main()
